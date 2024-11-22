@@ -1,8 +1,7 @@
 import React from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { setPopUp } from '../features/movieSlice';
-import PopUpBackground from './PopUpBackGround';
-import VideoBackground from './VideoBackground';
+import PopUpBackground from './PopUpBackground';
 
 function MoviePopup() {
     const dispatch = useDispatch();
