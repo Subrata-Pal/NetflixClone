@@ -1,0 +1,18 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.logout{
+    margin: 0 1em;
+}
+.search{
+    margin-right: 1em;
+}
+.search, .logout{
+    padding: 0.4em 0.7em;
+    background-color: red;
+    border-radius: 0.2em;
+}
