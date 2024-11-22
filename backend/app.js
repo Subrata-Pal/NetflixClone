@@ -16,7 +16,7 @@ dotenv.config({
 dbConnect();
 
 const corsOptions = {
-    origin : 'http://localhost:5173',
+    origin : 'https://netflix2-0-7hla.onrender.com',
     credentials: true
 }
 app.use(cors(corsOptions));
