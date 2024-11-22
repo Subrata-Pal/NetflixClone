@@ -2,7 +2,7 @@ import axios, { Axios } from "axios";
 import { options } from "../utils/constants";
 import { API_ENDPOINT_MOVIE } from "../utils/constants";
 import { useDispatch } from "react-redux";
-import { addUpcomingMovies } from "../features/MovieSlice";
+import { addUpcomingMovies } from "../features/movieSlice";
 
 const useUpcomingMovies = async ()=>{
     const dispatch = useDispatch();

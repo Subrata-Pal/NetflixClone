@@ -1,5 +1,5 @@
 import {useDispatch} from 'react-redux';
-import {addNowPlayingMovies} from '../features/MovieSlice';
+import {addNowPlayingMovies} from '../features/movieSlice';
 import {API_ENDPOINT_MOVIE, options} from '../utils/constants';
 import axios from 'axios';
 
