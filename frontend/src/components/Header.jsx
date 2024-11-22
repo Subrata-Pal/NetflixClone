@@ -10,6 +10,7 @@ import { useNavigate } from 'react-router-dom';
 import { setLoading } from '../features/userSlice';
 import { setToggle } from '../features/movieSlice';
 import Search from './Search';
+import logo from '../assets/580b57fcd9996e24bc43c529.png';
 
 function Header() {
   const user = useSelector((store) => store.app.user);
@@ -47,7 +48,7 @@ function Header() {
   return (
     <div className={`${!user ? 'bg-black': ''} ${toggle ? 'bg-black':''} w-screen fixed z-10`}>
     <div className='header'>
-      <img className='logo ml-6' src="../public/580b57fcd9996e24bc43c529.png" width="10%"  alt="Netflix Logo" />
+      <img className='logo ml-6' src={logo} width="10%"  alt="Netflix Logo" />
       {
         user && (
           <div className='flex justify-center items-center mr-2'>
