@@ -31,14 +31,14 @@ function Search() {
 
   return (
     <div className=' w-full h-screen bg-black'>
-        <div className='w-[60%] h-screen mx-auto pt-[10%]'>
+        <div className='w-[50vw] mx-auto pt-[10%] search-box'>
           <form action="" className='flex' onSubmit={submitHandler}>
             <input value={searchMovie} onChange={(e) => setSearchMovie(e.target.value)} className='w-full block p-2 rounded-md border border-black' type="text" placeholder='Search Movies'/>
             <button className='bg-red-600 text-white px-4 py-2 rounded-md'>Search</button>
           </form>
         </div>
-      <div className='relative -top-96 h-[50%] p-6 bg-black'>
-        <h1 className='text-3xl text-white mb-4'>{name.toUpperCase()}</h1>
+      <div className=' h-[50%] p-6 bg-black pt-16'>
+        <h1 className='text-3xl text-white mb-4 search-heading'>{name.toUpperCase()}</h1>
         <MovieList movies={searchMovieList}/>
       </div>
     </div>

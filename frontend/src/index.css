@@ -14,3 +14,87 @@
         scrollbar-width: none;  /* Firefox */
   }
 }
+
+@media (max-width : 650px)
+{
+    .logo{
+        width: 12vh
+    }
+    .login-container {
+        width : 80vw;
+    }
+    .isLogin{
+        font-size: small;
+    }
+    .captcha{
+        padding-top: 2vw;
+        font-size: x-small;
+    }
+    .options{
+        font-size: small;
+    }
+    .search, .logout, .username{
+        font-size: x-small;
+    }
+    .movieList{
+        font-size: large
+    }
+    .poster{
+        width: 28vw;
+    }
+    .search-box{
+        width : 80vw;
+        padding-top: 20vw;
+        font-size: x-small;
+    }
+    .search-box input{
+        font-size: x-small;
+        padding: 0em 1em;
+    }
+    .search-heading{
+        font-size: large;
+        margin-bottom: 2vw;
+    }
+    .main img{
+        width : 1em;
+    }
+    .video-background{
+        height: 0
+    }
+    .movie-container
+    {
+        margin-top: 50vw;
+    }
+    .special{
+        font-size: medium;
+    }
+    .title{
+        font-size: x-small;
+    }
+    .overview{
+        font-size: xx-small;
+    }
+    .play{
+        font-size: medium;
+    }
+    .title-background{
+        top : 0;
+        left: 0;
+    }
+}
+@media (min-width : 650px) and (max-width : 980px) 
+{
+    .login-container2 {
+        width : 50vw;
+    }
+    .search-box{
+        width: 60vw
+    }
+}
+@media (min-width : 980px) and (max-width : 1200px) 
+{
+    .login-container2 {
+        width : 35vw;
+    }
+}
+

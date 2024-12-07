@@ -13,7 +13,7 @@ function MainContainer() {
   const {id, original_title, overview} = nowPlayingMovie[0];
   
   return (
-    <div className=''>
+    <div className='relative'>
         <VideoBackground id = {id}/>
         <TitleBackground  title = {original_title} overview = {overview}/>
     </div>

@@ -1,4 +1,4 @@
-export const API_ENDPOINT = 'https://netflix2-0-7hla.onrender.com/api/v1/users';
+export const API_ENDPOINT = 'https://himovie.onrender.com/api/v1/users';
 
 export const options = {
     method: 'GET',

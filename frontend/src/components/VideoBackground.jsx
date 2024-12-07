@@ -10,7 +10,7 @@ function VideoBackground({id}) {
 
   return (
     <div
-   className = "w-screen h-screen relative">
+   className = "w-screen h-screen relative video-background">
       {
         key &&  <iframe
         className= "w-full inset-0 aspect-video "

@@ -19,7 +19,7 @@ function MovieCard({id, srcPath}) {
   }
   return (
     <div className='rounded-md'>
-        <div className='mr-3 bg-red-600 w-48'>
+        <div className='mr-3 bg-red-600 w-48 poster'>
           {
             srcPath &&  <img 
             onClick={onClickHandler}

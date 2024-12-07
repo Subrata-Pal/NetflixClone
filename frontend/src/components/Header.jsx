@@ -48,12 +48,12 @@ function Header() {
   return (
     <div className={`${!user ? 'bg-black': ''} ${toggle ? 'bg-black':''} w-screen fixed z-10`}>
     <div className='header'>
-      <img className='logo ml-6' src={logo} width="10%"  alt="Netflix Logo" />
+      <img className='logo ml-6 w-[8vmax]' src={logo}  alt="Netflix Logo" />
       {
         user && (
           <div className='flex justify-center items-center mr-2'>
-      <IoIosArrowDropdown className='w-7 h-7 mr-2'/>
-      <p className='text-lg '> {user.username}</p>
+      <IoIosArrowDropdown className='w-7 h-7 mr-2 username'/>
+      <p className='text-lg username'> {user.username}</p>
       <button onClick={logoutHandler} className='logout hover:bg-red-600'>Logout</button>
       <button onClick = {toggleHandler}
       className='search hover:bg-red-600'>{toggle ? "Home" : "Search Movies"}</button>

@@ -87,17 +87,16 @@ function Login() {
   }
 
   return (
-    <div>
+    <div className="">
       <Header />
-      <div>
-        <img
-          className="w-screen h-screen absolute"
-          src="https://cdn.mos.cms.futurecdn.net/rDJegQJaCyGaYysj2g5XWY-650-80.jpg.webp"
-          alt=""
-        />
+      <div className="bg-cover w-[100vw] h-screen absolute top-0 left-0 bg-[url('https://cdn.mos.cms.futurecdn.net/rDJegQJaCyGaYysj2g5XWY-650-80.jpg.webp')]">
       </div>
-      <div className="rounded-md w-[70vh] h-[32vw] bg-black opacity-90 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
-        <div className="w-[60vh] mx-auto backdrop-blur-sm text-white">
+      
+
+      <div className=" w-screen h-screen bg-red-300 flex justify-center items-center">
+
+      <div className="login-container login-container2 rounded-md w-[30vw] bg-black opacity-90 p-4 flex justify-center items-center">
+        <div className="w-[95%] flex flex-col backdrop-blur-sm text-white p-2 pb-6">
           <h1 className="text-2xl mt-2">{!isLogin ? "Sign up" : "Sign in"}</h1>
           <form action="" className="" onSubmit={getData}>
             {!isLogin && (
@@ -144,8 +143,8 @@ function Login() {
             >
               {`${isLoading ? "Loading..." : !isLogin ? "Sign up" : "Sign in"}`}
             </button>
-            <div className="w-full flex justify-between">
-              <label htmlFor="remember">
+            <div className="w-full flex justify-between items-center gap-2 options">
+              <label htmlFor="remember" className="flex justify-between items-center gap-2">
                 <input
                   type="checkbox"
                   name="remember"
@@ -159,11 +158,11 @@ function Login() {
           </form>
           <div className="tracking-wide mt-6">
             {!isLogin ? (
-              <p>
-                Already have an account?
+              <p className="text-md flex gap-1 isLogin">
+                <span>Already have an account?</span>
                 <span
                   onClick={loginHandler}
-                  className="font-medium text-lg text-blue-600 cursor-pointer"
+                  className=" text-md text-blue-600 cursor-pointer"
                 >
                   Login in now
                 </span>
@@ -180,7 +179,7 @@ function Login() {
               </p>
             )}
 
-            <p className="text-[0.8em] ">
+            <p className="text-xs captcha">
               This page is protected by google reCAPTCHA to ensure you're not a
               bot{" "}
               <a href="" className="text-blue-500 text-[1em] ">
@@ -189,6 +188,8 @@ function Login() {
             </p>
           </div>
         </div>
+      </div>
+
       </div>
     </div>
   );

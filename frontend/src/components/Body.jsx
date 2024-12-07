@@ -15,7 +15,9 @@ function Body() {
     ])
 
   return (
+    <div className='w-screen h-screen'>
     <RouterProvider router={appRoute}/>
+    </div>
   )
 }
 

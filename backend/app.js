@@ -16,7 +16,7 @@ dotenv.config({
 dbConnect();
 
 const corsOptions = {
-    origin : 'https://netflix2-0-7hla.onrender.com',
+    origin : 'https://himovie.onrender.com',
     credentials: true
 }
 app.use(cors(corsOptions));
